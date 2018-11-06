@@ -1,0 +1,63 @@
+<!--贏的畫面-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>One Click of Fate</title>
+   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   <script>
+      $(document).ready(function(){
+         $("[type = range]").change(function(){
+            var ledvalue = $("#led").val();
+            $(".ledvalue").text(ledvalue);
+         });
+      });
+   </script>
+   <style>
+      body {
+         background-color: lightgoldenrodyellow;
+         margin: 50px auto;
+         width: 360px;
+      }
+      h2{
+       text-align:center;
+       font-family:微軟正黑體;
+       font-size: 36px;
+       color:rgb(75, 35, 12);
+       margin-bottom: 12px;
+       }
+       h3{
+        font-size: 28px;
+       }
+      .container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+      a{
+         display:block;
+         text-decoration:none;
+         background-color:#FFFFFF;radius:3px;
+         width:150px;text-align:center;
+         margin:0 auto;
+         margin-bottom:30px;
+         font-size:2em;
+         box-shadow: 0px 3px 6px #000;}
+      .btn1{
+       color:rgb(75, 35, 12);
+       padding: 0.3em 0.5em;
+       font-size: 1.5em;
+       font-family:微軟正黑體;
+    }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <h2>命運的一指<br>One Click of Fate</h2>
+      <h3>切!可惡!運氣不錯...</h3>
+      <br>
+      <a class="btn1" href="./index.html"><strong>Back</strong></a>
+   </div>
+</body>
+</html>
